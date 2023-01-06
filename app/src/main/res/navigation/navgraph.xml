@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnav"
+    android:label="Weather"
+    app:startDestination="@id/searchLocationFragment">
+
+    <fragment
+        android:id="@+id/searchLocationFragment"
+
+        android:name="com.fortyone.weathertest.ui.main.SearchLocationFragment"
+        android:label="Location Lookup"
+        tools:layout="@layout/fragment_searchlocation">
+        <action
+            android:id="@+id/action_searchLocationFragment_to_displayFragment"
+            app:destination="@id/displayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayFragment"
+        android:name="com.fortyone.weathertest.ui.main.DisplayFragment"
+        android:label="Weather"
+        tools:layout="@layout/fragment_display" />
+</navigation>

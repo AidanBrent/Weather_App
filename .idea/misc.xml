@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/drawable/ic_sunny.xml" value="0.2355" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/forecast_card.xml" value="0.3015625" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/fragment_display.xml" value="0.33" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/fragment_searchlocation.xml" value="0.18885869565217392" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/fragment_weather_display.xml" value="0.26367781155015196" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/location_card.xml" value="0.18885869565217392" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/locationcard.xml" value="0.33" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/main_activity.xml" value="0.18885869565217392" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/main_fragment.xml" value="0.528125" />
+        <entry key="..\:/Coding/Personal/WeatherTest/app/src/main/res/layout/searchlocation_fragment.xml" value="0.18885869565217392" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

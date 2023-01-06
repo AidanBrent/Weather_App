@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.fortyone.weathertest.ui.main.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.SearchLocationFragment">
+
+        <TextView
+            android:id="@+id/txtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Location Search:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:onTextChanged="@{viewModel::onQueryTextChanged}"
+        app:layout_constraintStart_toStartOf="@+id/txtSearch"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch"
+        tools:text="Location Search" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="@{() -> viewModel.onSearch()}"
+            android:text="Search"
+            app:layout_constraintStart_toStartOf="@+id/edtQuery"
+            app:layout_constraintTop_toBottomOf="@+id/edtQuery" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLocations"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+            tools:listitem="@layout/location_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherTest</string>
+    <string name="last_refresh">Last Refresh:</string>
+    <string name="temp">%1$s°C</string>
+    <string name="real_feel">Feels like %1$s°C</string>
+    <string name="forecast">Forecast</string>
+    <string name="minTemp">Min: %1$s°C</string>
+    <string name="maxTemp">Max: %1$s°C</string>
+    <string name="search_location">%1$s, %2$s, %3$s</string>
+    <string name="weather_state">weather state</string>
+</resources>
